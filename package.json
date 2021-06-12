@@ -6,23 +6,15 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "react-router-dom": "^5.2.0",
+    "typescript": "^4.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build-dev": "snowpack dev",
+    "build-prod": "snowpack build --clean"
   },
   "browserslist": {
     "production": [
@@ -35,5 +27,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "autoprefixer": "^9",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "remove-files-webpack-plugin": "^1.4.4",
+    "snowpack": "^3.3.7",
+    "tailwindcss": "^2.1.2"
   }
 }
